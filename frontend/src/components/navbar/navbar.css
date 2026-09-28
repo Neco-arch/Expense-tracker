@@ -1,0 +1,84 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Appname {
+    font-size: 2.5rem;
+}
+
+.Action {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 32px;
+}
+
+.Dashboard_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.Sidebar {
+    height: 100%;
+    width: 20%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d1d5db;
+    color: white;
+    background-color: rgb(171, 107, 231);
+}
+
+.Main_feature > a  {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+.Main_feature {
+    display: flex;
+    flex-direction: column;
+    gap: 2.75rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.Main_feature > a:hover {
+    color: rgb(159, 157, 157);
+}
+
+.User_perf > a  {
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    transition: box-shadow 0.2s ease;
+}
+
+.User_perf > a:hover {
+    color: rgb(159, 157, 157);
+}
+
+
+.Sidebar_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.User_perf {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

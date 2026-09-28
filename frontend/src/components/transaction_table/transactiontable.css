@@ -1,0 +1,8 @@
+.Today_expense {
+    display: flex;
+    flex-direction: column;
+}
+
+.Today_expense > h2 {
+    font-size: 2rem;
+}

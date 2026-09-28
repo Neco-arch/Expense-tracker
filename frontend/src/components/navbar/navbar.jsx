@@ -1,10 +1,14 @@
 import "./navbar.css";
 import { Link } from "react-router";
+import {
+  HomeIcon,
+  Landmark,
+  User,
+  Settings,
+  ChartNoAxesCombined,
+} from "lucide-react";
 
-export default function Navbar({
-  landingpage = false,
-  dashboardpage = false
-}) {
+export default function Navbar({ landingpage = false, dashboardpage = false }) {
   const token = window.localStorage.getItem("token");
 
   return (
@@ -55,21 +59,26 @@ const Landingpagenav = ({ token }) => {
 
 const Dashboardnav = () => {
   return (
-    <nav>
-      <div className="Logo">
-        <img alt="Logo" />
+    <nav className="Sidebar_nav">
+      <div className="Main_feature">
+        <h2 className="Appname">Saving money</h2>
+        <a href="/">
+          <HomeIcon /> Dashboard
+        </a>
+        <a href="/transactions">
+          <Landmark />
+           Transactions
+        </a>
+        <a href="/statistics"><ChartNoAxesCombined/> Statistics</a>
       </div>
-
-      <div className="Navigation">
-        <ul>
-          <li>Overview</li>
-          <li>Transactions</li>
-          <li>Statistics</li>
-        </ul>
-      </div>
-
-      <div className="Userprofile">
-        <img alt="profile picture" />
+      <div className="User_perf">
+        <a href="/reports">
+          <User />
+          Account
+        </a>
+        <a href="/settings">
+          <Settings /> Settings
+        </a>
       </div>
     </nav>
   );

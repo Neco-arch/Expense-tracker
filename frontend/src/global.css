@@ -9,3 +9,15 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.MainPage {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    width: 90%;
+    gap: 1rem;
+}
+
+.Owner {
+    font-size: 2rem;
+}
