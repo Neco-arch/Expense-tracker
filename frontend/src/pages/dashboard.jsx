@@ -12,17 +12,19 @@ export default function Dashboard() {
             </div>
             <div className="MainPage">
                 <h2 className="Owner">Welcome back</h2>
-                <h2>{username}</h2>
+                <h2 className="Username_owner">{username}</h2>
                 <div className="Overview">
                     <Summarycard title={'Income'} />
                     <Summarycard title={'Expenses'} />
                 <div>
                 </div>
             </div>
-            <div className="Today_expense">
-                <h2>Today's Expense</h2>
+            <div className="Expense_wrapper">
+                <div className="Today_expense">
+                <h2 className='Heading_ui'>Today's Expenses</h2>
                     <TransactionTable tabletitle="Today Transaction"/>
                 </div>
+            </div>
             </div>
         </div>
     )

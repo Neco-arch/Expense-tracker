@@ -6,3 +6,41 @@
 .Today_expense > h2 {
     font-size: 2rem;
 }
+
+.Table_expense {
+    display: flex;
+    height: 100%;
+}
+
+.Table_expense.no_expense {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Heading_ui {
+    font-size: 1.5rem;
+}
+
+.Table_show {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.table_row {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.logo_tran {
+    width: 32px;
+    height: 32px;
+}
+
+.Wrapper_description {
+    display: flex;
+    gap: 1rem;
+}

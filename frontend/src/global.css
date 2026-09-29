@@ -19,5 +19,25 @@ body {
 }
 
 .Owner {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.Expense_wrapper {
+    display: flex;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    width: 99%;
+    height: 100%;
+}
+
+.Username_owner {
     font-size: 2rem;
+}
+
+.Today_expense {
+    flex: 0.7;
+    padding: 1rem;
 }
